@@ -15,6 +15,7 @@ export default function CertificationsSection({ isDark }: CertificationsSectionP
     { key: "all", label: "All Certifications" },
     { key: "cloud", label: "Cloud & Data" },
     { key: "security", label: "Security" },
+    { key: "networking", label: "Networking" },
     { key: "development", label: "Development" }
   ];
 
