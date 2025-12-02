@@ -1,0 +1,72 @@
+export const certifications = [
+    {
+      id: 1,
+      title: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+      category: "cloud",
+      description: "Foundational knowledge of Oracle Cloud Infrastructure services and solutions.",
+      issuer: "Oracle",
+      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=600&fit=crop",
+      tags: ["Oracle", "Cloud", "Infrastructure"],
+      skills: ["Cloud Concepts", "OCI Services", "Security", "Pricing Models"]
+    },
+    {
+      id: 2,
+      title: "Oracle Data Platform 2025 Certified Foundations Associate",
+      category: "cloud",
+      description: "Understanding of Oracle's data platform services and data management solutions.",
+      issuer: "Oracle",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
+      tags: ["Oracle", "Data Platform", "Database"],
+      skills: ["Data Management", "Analytics", "Database Services", "Data Integration"]
+    },
+    {
+      id: 3,
+      title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+      category: "cloud",
+      description: "Knowledge of AI and machine learning concepts on Oracle Cloud Infrastructure.",
+      issuer: "Oracle",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+      tags: ["Oracle", "AI", "Machine Learning"],
+      skills: ["AI Fundamentals", "ML Concepts", "OCI AI Services", "Data Science"]
+    },
+    {
+      id: 4,
+      title: "Cybersecurity Essentials",
+      category: "security",
+      description: "Comprehensive understanding of cybersecurity principles and best practices.",
+      issuer: "Cisco Networking Academy",
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=600&fit=crop",
+      tags: ["Cisco", "Cybersecurity", "Network Security"],
+      skills: ["Threat Detection", "Security Protocols", "Risk Management", "Network Defense"]
+    },
+    {
+      id: 5,
+      title: "Introduction to Cybersecurity",
+      category: "security",
+      description: "Foundational concepts in cybersecurity and online safety practices.",
+      issuer: "Cisco Networking Academy",
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
+      tags: ["Cisco", "Cybersecurity", "Fundamentals"],
+      skills: ["Security Basics", "Cyber Threats", "Data Protection", "Safe Practices"]
+    },
+    {
+      id: 6,
+      title: "Introduction to Packet Tracer",
+      category: "networking",
+      description: "Skills in network simulation and configuration using Cisco Packet Tracer.",
+      issuer: "Cisco Networking Academy",
+      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=600&fit=crop",
+      tags: ["Cisco", "Networking", "Simulation"],
+      skills: ["Network Design", "Device Configuration", "Troubleshooting", "Simulation"]
+    },
+    {
+      id: 7,
+      title: "Full Stack Development",
+      category: "development",
+      description: "Comprehensive full stack development training covering frontend and backend technologies.",
+      issuer: "FNB App Academy 2025",
+      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop",
+      tags: ["Full Stack", "Web Development", "FNB"],
+      skills: ["Frontend Development", "Backend APIs", "Database Management", "Deployment"]
+    }
+  ];
