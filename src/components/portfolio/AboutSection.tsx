@@ -1,0 +1,131 @@
+import { motion } from "framer-motion";
+import { Code, Palette, Zap, Heart } from "lucide-react";
+
+interface AboutSectionProps {
+  isDark: boolean;
+}
+
+export default function AboutSection({ isDark }: AboutSectionProps) {
+  const stats = [
+    { icon: Code, label: "Certifications", value: "6+" },
+    { icon: Heart, label: "Technologies", value: "15+" },
+    { icon: Zap, label: "Years Learning", value: "2+" },
+    { icon: Palette, label: "Languages", value: "6+" }
+  ];
+
+  return (
+    <section id="about" className="min-h-screen flex items-center px-6 py-20">
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <h2 className={`text-4xl md:text-6xl font-bold mb-6 ${
+            isDark ? "text-white" : "text-gray-900"
+          }`}>
+            About{" "}
+            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+              Me
+            </span>
+          </h2>
+        </motion.div>
+
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className={`backdrop-blur-xl rounded-3xl p-8 ${
+              isDark ? "bg-white/5 border border-white/10" : "bg-black/5 border border-black/10"
+            }`}>
+              <div className="relative">
+                <div className="w-64 h-64 mx-auto rounded-3xl bg-gradient-to-br from-blue-500 to-purple-600 p-1">
+                  <div className={`w-full h-full rounded-3xl flex items-center justify-center text-6xl ${
+                    isDark ? "bg-gray-900" : "bg-white"
+                  }`}>
+                    <span role="img" aria-label="developer">&#128104;&#8205;&#128187;</span>
+                  </div>
+                </div>
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                  className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center"
+                >
+                  <Zap className="w-8 h-8 text-white" />
+                </motion.div>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <h3 className={`text-3xl font-bold mb-6 ${
+              isDark ? "text-white" : "text-gray-900"
+            }`}>
+              Building Tomorrow's Solutions
+            </h3>
+            <p className={`text-lg leading-relaxed mb-8 ${
+              isDark ? "text-gray-300" : "text-gray-600"
+            }`}>
+              I'm currently pursuing my Diploma in ICT: Applications Development at Durban University 
+              of Technology, having completed my 1st and 2nd year. I've earned multiple certifications 
+              including Oracle Cloud Infrastructure, Cisco Cybersecurity Essentials, and completed the 
+              FNB App Academy Full Stack Development program.
+            </p>
+            <p className={`text-lg leading-relaxed mb-8 ${
+              isDark ? "text-gray-300" : "text-gray-600"
+            }`}>
+              My professional journey includes working as a Call Centre Sales Agent at Talksure, 
+              where I honed my communication skills and gained experience with CRM software and 
+              data management. I'm passionate about backend development, cloud infrastructure, 
+              and cybersecurity fundamentals.
+            </p>
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
+        >
+          {stats.map((stat, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ scale: 1.05 }}
+              className={`backdrop-blur-xl rounded-2xl p-6 text-center ${
+                isDark ? "bg-white/5 border border-white/10" : "bg-black/5 border border-black/10"
+              }`}
+            >
+              <stat.icon className="w-8 h-8 mx-auto mb-3 text-blue-500" />
+              <div className={`text-2xl font-bold mb-1 ${
+                isDark ? "text-white" : "text-gray-900"
+              }`}>
+                {stat.value}
+              </div>
+              <div className={`text-sm ${
+                isDark ? "text-gray-400" : "text-gray-600"
+              }`}>
+                {stat.label}
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+}
