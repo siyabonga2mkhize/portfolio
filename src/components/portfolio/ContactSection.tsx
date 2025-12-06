@@ -12,7 +12,7 @@ interface ContactSectionProps {
 export default function ContactSection({ isDark }: ContactSectionProps) {
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
+    { icon: Github, href: "https://github.com/siyabonga2mkhize", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/siyabonga-mkhize-22b1ab313", label: "LinkedIn" }
   ];
 
@@ -58,7 +58,7 @@ export default function ContactSection({ isDark }: ContactSectionProps) {
               {[
                 { icon: Mail, text: "siyabonga2mkhize@gmail.com", href: "mailto:siyabonga2mkhize@gmail.com" },
                 { icon: Phone, text: "+27 67 989 8434", href: "tel:+27679898434" },
-                { icon: MapPin, text: "Bellair, Durban, South Africa", href: "#" }
+                { icon: MapPin, text: "Durban", href: "#" }
               ].map((contact, index) => (
                 <motion.div
                   key={index}
