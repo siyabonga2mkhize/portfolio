@@ -82,11 +82,16 @@ export default function CertificationsSection({ isDark }: CertificationsSectionP
                 transition={{ duration: 0.5 }}
                 className="group"
               >
-                <div className={`h-full backdrop-blur-xl rounded-3xl overflow-hidden transition-all duration-300 ease-in-out ${
-                  isDark 
-                    ? "bg-white/5 border border-white/10 hover:border-blue-500/50 hover:bg-white/10" 
-                    : "bg-black/5 border border-black/10 hover:border-blue-500/50 hover:bg-black/10"
-                } hover:shadow-2xl hover:shadow-blue-500/10`}>
+                <a 
+                  href={cert.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={`h-full block backdrop-blur-xl rounded-3xl overflow-hidden transition-all duration-300 ease-in-out ${
+                    isDark 
+                      ? "bg-white/5 border border-white/10 hover:border-blue-500/50 hover:bg-white/10" 
+                      : "bg-black/5 border border-black/10 hover:border-blue-500/50 hover:bg-black/10"
+                  } hover:shadow-2xl hover:shadow-blue-500/10`}
+                >
                   <div className="relative overflow-hidden">
                     <img
                       src={cert.image}
@@ -130,7 +135,7 @@ export default function CertificationsSection({ isDark }: CertificationsSectionP
                       ))}
                     </div>
                   </div>
-                </div>
+                </a>
               </motion.div>
             ))}
           </AnimatePresence>
