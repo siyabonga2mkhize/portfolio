@@ -4,7 +4,7 @@ import ProjectDemo from './components/ProjectDemo'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio/">
       <Routes>
         <Route path="/" element={<Portfolio />} />
         <Route path="/project" element={<ProjectDemo />} />
