@@ -4,7 +4,7 @@ import HeroSection from "./portfolio/HeroSection";
 import AboutSection from "./portfolio/AboutSection";
 import SkillsSection from "./portfolio/SkillsSection";
 import CertificationsSection from "./portfolio/CertificationsSection";
-// import TestimonialsSection from "./portfolio/TestimonialsSection"; // Commented out
+import TestimonialsSection from "./portfolio/TestimonialsSection";
 import ContactSection from "./portfolio/ContactSection";
 import Navigation from "./portfolio/Navigation";
 import ThemeToggle from "./portfolio/ThemeToggle";
@@ -75,7 +75,7 @@ export default function Portfolio() {
         <AboutSection isDark={isDark} />
         <SkillsSection isDark={isDark} />
         <CertificationsSection isDark={isDark} />
-        {/* <TestimonialsSection isDark={isDark} /> Commented out */}
+        <TestimonialsSection isDark={isDark} />
         <ContactSection isDark={isDark} />
       </main>
       
