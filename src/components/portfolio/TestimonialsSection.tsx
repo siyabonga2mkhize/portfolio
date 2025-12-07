@@ -116,3 +116,4 @@ export default function TestimonialsSection({ isDark }: TestimonialsSectionProps
     </section>
   );
 }
+
