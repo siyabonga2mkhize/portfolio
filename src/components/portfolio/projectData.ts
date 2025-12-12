@@ -8,7 +8,9 @@ export const certifications = [
     image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=600&fit=crop",
     tags: ["Oracle", "Cloud", "Infrastructure"],
     skills: ["Cloud Concepts", "OCI Services", "Security", "Pricing Models"],
-    url: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQC24N2EF2wXTpoE-1WiorqBAZqPML7dl8cxkABcFju4Hdk?e=vVYI0R"
+<<<<<<< HEAD
+    link: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQC24N2EF2wXTpoE-1WiorqBAZqPML7dl8cxkABcFju4Hdk?e=epQVTI"
+>>>>>>> d70ef9f0a4ac6ea530759f3479b781cf010813e6
   },
   {
     id: 2,
@@ -19,7 +21,9 @@ export const certifications = [
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
     tags: ["Oracle", "Data Platform", "Database"],
     skills: ["Data Management", "Analytics", "Database Services", "Data Integration"],
-    url: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQA7JWcfu4q6Tq_6qj6OH-3wAXQ9x7nFNlEl_8eu50ATEDo?e=rFHYDc"
+<<<<<<< HEAD
+    link: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQA7JWcfu4q6Tq_6qj6OH-3wAXQ9x7nFNlEl_8eu50ATEDo?e=OeDErI"
+>>>>>>> d70ef9f0a4ac6ea530759f3479b781cf010813e6
   },
   {
     id: 3,
@@ -30,7 +34,9 @@ export const certifications = [
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
     tags: ["Oracle", "AI", "Machine Learning"],
     skills: ["AI Fundamentals", "ML Concepts", "OCI AI Services", "Data Science"],
-    url: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQBRnUT77vBBRL4wGtTdilbHASqRvAILFIsLjDdDkXJkaFs?e=lx5f52"
+<<<<<<< HEAD
+    link: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQBRnUT77vBBRL4wGtTdilbHASqRvAILFIsLjDdDkXJkaFs?e=Ch1hw4"
+>>>>>>> d70ef9f0a4ac6ea530759f3479b781cf010813e6
   },
   {
     id: 4,
@@ -41,7 +47,9 @@ export const certifications = [
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=600&fit=crop",
     tags: ["Cisco", "Cybersecurity", "Network Security"],
     skills: ["Threat Detection", "Security Protocols", "Risk Management", "Network Defense"],
-    url: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQBeGNuQ6OQrR5QY2Ckekq-DAeVwcm6TfmS8K_moykrJ0gc?e=NviEZH"
+<<<<<<< HEAD
+    link: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQBeGNuQ6OQrR5QY2Ckekq-DAeVwcm6TfmS8K_moykrJ0gc?e=YnwDPb"
+>>>>>>> d70ef9f0a4ac6ea530759f3479b781cf010813e6
   },
   {
     id: 5,
@@ -52,7 +60,9 @@ export const certifications = [
     image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
     tags: ["Cisco", "Cybersecurity", "Fundamentals"],
     skills: ["Security Basics", "Cyber Threats", "Data Protection", "Safe Practices"],
-    url: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQBd2ZSI9H7oSadyPbGyTFK1Aa0OGOT61sRu1fXQpKV09q8?e=9IqQub"
+<<<<<<< HEAD
+    link: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQBd2ZSI9H7oSadyPbGyTFK1Aa0OGOT61sRu1fXQpKV09q8?e=MDGSaj"
+>>>>>>> d70ef9f0a4ac6ea530759f3479b781cf010813e6
   },
   {
     id: 6,
@@ -63,7 +73,9 @@ export const certifications = [
     image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=600&fit=crop",
     tags: ["Cisco", "Networking", "Simulation"],
     skills: ["Network Design", "Device Configuration", "Troubleshooting", "Simulation"],
-    url: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQDU7FSxZv7TQ7EwJSQ2rhAUASdPC2F_XV2THydSYkLB8vQ?e=PbeCwp"
+<<<<<<< HEAD
+    link: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQDU7FSxZv7TQ7EwJSQ2rhAUAbPN9jHd0qUKA3yW0SYIjMo?e=lV5Vga"
+>>>>>>> d70ef9f0a4ac6ea530759f3479b781cf010813e6
   },
   {
     id: 7,
@@ -74,7 +86,9 @@ export const certifications = [
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop",
     tags: ["Full Stack", "Web Development", "FNB"],
     skills: ["Frontend Development", "Backend APIs", "Database Management", "Deployment"],
-    url: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQAkTS7lFvVSRJ6f3K4nRc07AapXXUNwmGGUJNce9v8qPmc?e=ANvfhs"
+<<<<<<< HEAD
+    link: "https://dut4lifeac-my.sharepoint.com/:b:/g/personal/22430686_dut4life_ac_za/IQAkTS7lFvVSRJ6f3K4nRc07AapXXUNwmGGUJNce9v8qPmc?e=bAh30H"
+>>>>>>> d70ef9f0a4ac6ea530759f3479b781cf010813e6
   }
 ];
 

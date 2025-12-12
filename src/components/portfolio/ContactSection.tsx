@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone, Send, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,31 +10,6 @@ interface ContactSectionProps {
 }
 
 export default function ContactSection({ isDark }: ContactSectionProps) {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    alert("Thank you for your message! I'll get back to you soon.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    setIsSubmitting(false);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   const socialLinks = [
     { icon: Github, href: "https://github.com/siyabonga2mkhize", label: "GitHub" },
@@ -83,7 +58,9 @@ export default function ContactSection({ isDark }: ContactSectionProps) {
               {[
                 { icon: Mail, text: "siyabonga2mkhize@gmail.com", href: "mailto:siyabonga2mkhize@gmail.com" },
                 { icon: Phone, text: "+27 67 989 8434", href: "tel:+27679898434" },
+<<<<<<< HEAD
                 { icon: MapPin, text: "Durban, South Africa", href: "https://maps.app.goo.gl/18fg7JR2i3TkikAh7" }
+>>>>>>> d70ef9f0a4ac6ea530759f3479b781cf010813e6
               ].map((contact, index) => (
                 <motion.div
                   key={index}
@@ -144,7 +121,7 @@ export default function ContactSection({ isDark }: ContactSectionProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form action="https://formspree.io/f/xldqlzvv" method="POST" className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className={`block text-sm font-medium mb-2 ${
@@ -154,8 +131,6 @@ export default function ContactSection({ isDark }: ContactSectionProps) {
                   </label>
                   <Input
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
                     required
                     className={`backdrop-blur-xl rounded-2xl border-0 ${
                       isDark ? "bg-white/10 text-white placeholder-gray-400" : "bg-black/5 text-gray-900"
@@ -172,8 +147,6 @@ export default function ContactSection({ isDark }: ContactSectionProps) {
                   <Input
                     name="email"
                     type="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     required
                     className={`backdrop-blur-xl rounded-2xl border-0 ${
                       isDark ? "bg-white/10 text-white placeholder-gray-400" : "bg-black/5 text-gray-900"
@@ -191,8 +164,6 @@ export default function ContactSection({ isDark }: ContactSectionProps) {
                 </label>
                 <Input
                   name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
                   required
                   className={`backdrop-blur-xl rounded-2xl border-0 ${
                     isDark ? "bg-white/10 text-white placeholder-gray-400" : "bg-black/5 text-gray-900"
@@ -209,8 +180,6 @@ export default function ContactSection({ isDark }: ContactSectionProps) {
                 </label>
                 <Textarea
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                   rows={6}
                   className={`backdrop-blur-xl rounded-2xl border-0 resize-none ${
@@ -222,19 +191,10 @@ export default function ContactSection({ isDark }: ContactSectionProps) {
               
               <Button
                 type="submit"
-                disabled={isSubmitting}
                 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-2xl py-3 font-medium transition-all duration-300 hover:scale-[1.02] disabled:opacity-50"
               >
-                {isSubmitting ? (
-                  <motion.div
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                    className="w-5 h-5 border-2 border-white border-t-transparent rounded-full mr-2"
-                  />
-                ) : (
-                  <Send className="w-5 h-5 mr-2" />
-                )}
-                {isSubmitting ? "Sending..." : "Send Message"}
+                <Send className="w-5 h-5 mr-2" />
+                Send Message
               </Button>
             </form>
           </motion.div>

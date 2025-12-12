@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
+  base: '/portfolio/portfoliozip/', // Updated for GitHub Pages deployment and local server base URL
   plugins: [react()],
   resolve: {
     alias: {
