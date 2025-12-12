@@ -37,7 +37,7 @@ export default function CertificationsSection({ isDark }: CertificationsSectionP
             isDark ? "text-white" : "text-gray-900"
           }`}>
             My{" "}
-            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-blue-500 to-purple-500 bg-clip-text text-transparent">
               Certifications
             </span>
           </h2>
@@ -82,55 +82,109 @@ export default function CertificationsSection({ isDark }: CertificationsSectionP
                 transition={{ duration: 0.5 }}
                 className="group"
               >
-                <div className={`h-full backdrop-blur-xl rounded-3xl overflow-hidden transition-all duration-300 ease-in-out ${
-                  isDark 
-                    ? "bg-white/5 border border-white/10 hover:border-blue-500/50 hover:bg-white/10" 
-                    : "bg-black/5 border border-black/10 hover:border-blue-500/50 hover:bg-black/10"
-                } hover:shadow-2xl hover:shadow-blue-500/10`}>
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={cert.image}
-                      alt={cert.title}
-                      className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute top-4 right-4">
-                      <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full">
-                        <Award className="w-5 h-5 text-white" />
+                {cert.url ? (
+                  <a href={cert.url} target="_blank" rel="noopener noreferrer" className="block">
+                    <div className={`h-full backdrop-blur-xl rounded-3xl overflow-hidden transition-all duration-300 ease-in-out ${
+                      isDark 
+                        ? "bg-white/5 border border-white/10 hover:border-blue-500/50 hover:bg-white/10" 
+                        : "bg-black/5 border border-black/10 hover:border-blue-500/50 hover:bg-black/10"
+                    } hover:shadow-2xl hover:shadow-blue-500/10`}>
+                      <div className="relative overflow-hidden">
+                        <img
+                          src={cert.image}
+                          alt={cert.title}
+                          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute top-4 right-4">
+                          <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full">
+                            <Award className="w-5 h-5 text-white" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <div className={`text-sm font-medium mb-2 ${
+                          isDark ? "text-blue-400" : "text-blue-600"
+                        }`}>
+                          {cert.issuer}
+                        </div>
+                        <h3 className={`text-lg font-bold mb-2 leading-tight ${
+                          isDark ? "text-white" : "text-gray-900"
+                        }`}>
+                          {cert.title}
+                        </h3>
+                        <p className={`text-sm mb-4 leading-relaxed ${
+                          isDark ? "text-gray-300" : "text-gray-600"
+                        }`}>
+                          {cert.description}
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {cert.tags.map((tag, tagIndex) => (
+                            <span
+                              key={tagIndex}
+                              className={`px-3 py-1 text-xs rounded-full ${
+                                isDark
+                                  ? "bg-blue-500/20 text-blue-300"
+                                  : "bg-blue-500/10 text-blue-600"
+                              }`}
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                ) : (
+                  <div className={`h-full backdrop-blur-xl rounded-3xl overflow-hidden transition-all duration-300 ease-in-out ${
+                    isDark 
+                      ? "bg-white/5 border border-white/10 hover:border-blue-500/50 hover:bg-white/10" 
+                      : "bg-black/5 border border-black/10 hover:border-blue-500/50 hover:bg-black/10"
+                  } hover:shadow-2xl hover:shadow-blue-500/10`}>
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={cert.image}
+                        alt={cert.title}
+                        className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute top-4 right-4">
+                        <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full">
+                          <Award className="w-5 h-5 text-white" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <div className={`text-sm font-medium mb-2 ${
+                        isDark ? "text-blue-400" : "text-blue-600"
+                      }`}>
+                        {cert.issuer}
+                      </div>
+                      <h3 className={`text-lg font-bold mb-2 leading-tight ${
+                        isDark ? "text-white" : "text-gray-900"
+                      }`}>
+                        {cert.title}
+                      </h3>
+                      <p className={`text-sm mb-4 leading-relaxed ${
+                        isDark ? "text-gray-300" : "text-gray-600"
+                      }`}>
+                        {cert.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {cert.tags.map((tag, tagIndex) => (
+                          <span
+                            key={tagIndex}
+                            className={`px-3 py-1 text-xs rounded-full ${
+                              isDark
+                                ? "bg-blue-500/20 text-blue-300"
+                                : "bg-blue-500/10 text-blue-600"
+                            }`}
+                          >
+                            {tag}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
-                  <div className="p-6">
-                    <div className={`text-sm font-medium mb-2 ${
-                      isDark ? "text-blue-400" : "text-blue-600"
-                    }`}>
-                      {cert.issuer}
-                    </div>
-                    <h3 className={`text-lg font-bold mb-2 leading-tight ${
-                      isDark ? "text-white" : "text-gray-900"
-                    }`}>
-                      {cert.title}
-                    </h3>
-                    <p className={`text-sm mb-4 leading-relaxed ${
-                      isDark ? "text-gray-300" : "text-gray-600"
-                    }`}>
-                      {cert.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {cert.tags.map((tag, tagIndex) => (
-                        <span
-                          key={tagIndex}
-                          className={`px-3 py-1 text-xs rounded-full ${
-                            isDark
-                              ? "bg-blue-500/20 text-blue-300"
-                              : "bg-blue-500/10 text-blue-600"
-                          }`}
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                )}
               </motion.div>
             ))}
           </AnimatePresence>
