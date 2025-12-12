@@ -102,10 +102,12 @@ export default function HeroSection({ isDark }: HeroSectionProps) {
             <Mail className="w-5 h-5 mr-2" />
             View Certifications
           </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className={`px-8 py-3 rounded-2xl backdrop-blur-xl transition-all duration-300 hover:scale-105 ${
+          <a
+            href="/Siyabonga MKhize CV(3).pdf" // Assuming Siyabonga MKhize CV(3).pdf is in the public directory
+            download="Siyabonga MKhize CV(3).pdf" // Suggested filename for download
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center justify-center whitespace-nowrap text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border bg-background shadow-sm hover:text-accent-foreground h-10 px-8 py-3 rounded-2xl backdrop-blur-xl transition-all duration-300 hover:scale-105 ${
               isDark 
                 ? "border-white/20 text-white hover:bg-white/10" 
                 : "border-black/20 text-gray-900 hover:bg-black/5"
@@ -113,7 +115,7 @@ export default function HeroSection({ isDark }: HeroSectionProps) {
           >
             <Download className="w-5 h-5 mr-2" />
             Download Resume
-          </Button>
+          </a>
         </motion.div>
 
         <motion.div
