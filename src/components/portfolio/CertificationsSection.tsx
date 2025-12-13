@@ -37,7 +37,7 @@ export default function CertificationsSection({ isDark }: CertificationsSectionP
             isDark ? "text-white" : "text-gray-900"
           }`}>
             My{" "}
-            <span className="bg-gradient-to-r from-blue-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
               Certifications
             </span>
           </h2>

@@ -8,7 +8,7 @@ interface FooterProps {
 
 export default function Footer({ isDark }: FooterProps) {
   const socialLinks = [
-    { icon: Github, href: "https://github.com/siyabonga2mkhize", label: "GitHub" },
+    { icon: Github, href: "https://github.com/siyabonga2mkhize/portfolio.git", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/siyabonga-mkhize-22b1ab313", label: "LinkedIn" }
   ];
 
