@@ -85,16 +85,7 @@ export default function TestimonialsSection({ isDark }: TestimonialsSectionProps
               </p>
 
               <div className="flex items-center gap-4">
-                <div className="relative">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                  <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
-                    <Star className="w-3 h-3 text-white fill-white" />
-                  </div>
-                </div>
+
                 <div>
                   <h4 className={`font-semibold ${
                     isDark ? "text-white" : "text-gray-900"
